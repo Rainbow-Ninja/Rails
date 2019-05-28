@@ -1,0 +1,15 @@
+current directory: /mnt/c/Users/Jo/Desktop/CA/projects/gentech_2019/Rails/Day1_MVC/test-app/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+/usr/bin/ruby2.5 -r ./siteconf20190528-11905-ge7bmr.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Jo/Desktop/CA/projects/gentech_2019/Rails/Day1_MVC/test-app/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/Jo/Desktop/CA/projects/gentech_2019/Rails/Day1_MVC/test-app/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /mnt/c/Users/Jo/Desktop/CA/projects/gentech_2019/Rails/Day1_MVC/test-app/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190528-11905-1t8u4lb/skiptrace
