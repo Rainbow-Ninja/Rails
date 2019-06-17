@@ -1,0 +1,9 @@
+<h1>My Games</h1>
+<% @games.each{ |game| %>
+<% if game == "Mario" %>
+<li>This is <%= game %></li>
+<%else%>
+<li>This is not Mario, it is <%=game%></li>
+<%end%>
+<%}%>
+

@@ -1,0 +1,16 @@
+<%= render "shared/top_nav", user: @user %>
+<h1>Home Page!!!</h1>
+
+<% user = "Jo" %>
+<%if user%>
+    <h1> Hello <%= user %></h1>
+<%else%>
+    <h1> You must login </h1>
+<%end%>
+
+<%# dont define vars in view! Only consume in view! View is dumb, no logic, just view! %>
+<% @names.each do |name|%>
+<ul>
+    <li><%= name.capitalize %></li>
+</ul>
+<%end%>

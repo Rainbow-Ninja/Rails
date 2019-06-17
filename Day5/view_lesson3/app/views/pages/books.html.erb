@@ -1,0 +1,8 @@
+<%= render "shared/top_nav", user: @user %>
+<h1>Books</h1>
+
+<% @books.each do |book|%>
+<ul>
+    <h2><li><%= book %></li></h2>
+</ul>
+<%end%>
