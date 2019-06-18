@@ -1,0 +1,16 @@
+<h1>Edit the Movie</h1>
+
+ <form action="<%=movie_path(params[:id].to_i)%>" method="POST"> 
+ <%# update and delete requests must be sent as a hidden field in a form, cause form method can only accept post %>
+ <input type="hidden" name="_method" value="put">
+
+ <input type="hidden" name="authenticity_token" value="<%form_authenticity_token%>">
+    <label><h2>Title</h2></label>
+    <input type="text" name="movie[:title]" value="<%=@movie[":title"]%>">
+    <br>
+    <label><h2>Rating</h2></label>
+    <input type="number" name="movie[:rating]" min="1" max="10" value="<%=@movie[":rating"]%>">
+    <br>
+    <br>
+    <input type="submit" name="Update Movie">
+</form>

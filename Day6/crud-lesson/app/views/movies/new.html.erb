@@ -1,0 +1,14 @@
+<h1>Add a New Movie</h1>
+
+ <form action="<%=movies_path%>" method="POST"> <%#when i look in routes in post it says the action we want is create %>
+ <%# pass authenticity token as a hidden field %>
+ <input type="hidden" name="authenticity_token" value="<%form_authenticity_token%>">
+    <label><h2>Title</h2></label>
+    <input type="text" name="movie[:title]">
+    <br>
+    <label><h2>Rating</h2></label>
+    <input type="number" name="movie[:rating]" min="1" max="10">
+    <br>
+    <br>
+    <input type="submit" name="Add Movie">
+</form>
