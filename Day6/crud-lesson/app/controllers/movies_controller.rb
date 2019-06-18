@@ -43,4 +43,12 @@ class MoviesController < ApplicationController
         session[:movies][params[:id].to_i] = params[:movie]
         redirect_to movie_path(params[:id].to_i)
     end
+
+    def delete
+        deletableArray = session[:movies]
+        deletableArray.delete_at(params[:id].to_i)
+        session[:movies] = deletableArray
+        redirect_to movies_path
+    end
+
 end

@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   #update the movie
   put "/movies/:id", to: "movies#update"
 
+  #delete a movie
+  delete "/movies/:id", to: "movies#delete"
+
 end
