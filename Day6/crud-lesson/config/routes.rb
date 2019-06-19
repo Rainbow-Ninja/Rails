@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   #show a single movie
   get "/movies/:id", to: "movies#show", as: "movie"
-
+ 
   #edit a movie
   get "/movies/:id/edit", to: "movies#edit", as: "edit_movie"
 

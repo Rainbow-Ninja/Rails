@@ -4,6 +4,7 @@ class MoviesController < ApplicationController
     def index
         @movies = session[:movies]
     end
+    
 
     #post a new movie
     def create

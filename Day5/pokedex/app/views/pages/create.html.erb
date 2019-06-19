@@ -1,4 +1,17 @@
 <h1>Create</h1>
+<%= render "shared/top_nav"%>
 
-<%= @results["pokemon-name"] %>
-<img src="<% @results["sprites"]["front_default"] %>">
+<h1><%= params["pokemon_name"] %></h1>
+
+<h3>Default pokemon</h3>
+<img src="<%=@sprite_img%>">
+<h3>Shiny pokemon (if available)</h3>
+<br>
+<img src="<%=@sprite_img2%>">
+<h3>Female pokemon (if available)</h3>
+<br>
+<img src="<%=@sprite_img3%>">
+<br>
+<h3>Type: <%=@type%></h3>
+
+<h3><%=@type2%></h3>
