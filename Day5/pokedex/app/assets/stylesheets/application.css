@@ -13,3 +13,128 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+    font-family: 'Pokemon_Hollow';
+    src: url('/assets/Pokemon_Hollow.ttf');
+    font-family: 'Pokemon_Solid';
+    src: url('/assets/Pokemon_Solid.ttf');
+ }
+
+.container{
+    width: 50%;
+    display: flex;
+    height: 35%;
+    left: 5%;
+    top: 40%;
+    position: absolute;
+    background-color: rgba(253, 252, 252, 0.24);
+    justify-content: space-around;
+}
+
+h1{
+    /* position: absolute; */
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 23%;
+    top: 40%;
+}
+
+.poke_bg{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+}
+
+.pika{
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: auto;
+    top: 30%;
+    left: 3%;
+}
+
+.pokedex_page h1{
+    position: absolute;
+}
+
+.create_page .bg{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    align-content: center;
+}
+
+.name{
+    width: auto;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-family: 'Pokemon_Solid';
+    letter-spacing: 3px;
+}
+
+.back{
+    top: 75%;
+    left: 5%;
+    position: absolute;
+    font-size: 1.2em;
+    z-index: 3;
+    color: #333;
+}
+
+h2{
+    font-family: 'Pokemon_Solid';
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.box h2{
+    padding: 15% 0 5% 0;
+    font-size: 1em;
+}
+
+.go_back{
+    background-color: rgb(245, 245, 150);
+    overflow: hidden;
+    width: 97vw;
+    height: 97vh;
+}
+
+.go_back img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.go_back h1{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    width: 15%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+h3{
+    margin: 0 0 5% 0;
+}
