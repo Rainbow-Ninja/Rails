@@ -1,0 +1,21 @@
+<form action="/books" method="POST">
+<%# to avoid csrf token error add the authenticity token as a hidden field %>
+    <input type="hidden" name="authenticity_token" value="<% form_authenticity_token%>">
+    <label>Title</label>
+    <br>
+    <input type="text" name="title">
+    <br>
+    <br>
+    <label>Author</label>
+    <br>
+    <input type="text" name="author">
+    <br>
+    <br>
+    <label>Genre</label>
+    <br>
+    <input type="text" name="genre">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
