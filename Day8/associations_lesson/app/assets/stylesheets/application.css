@@ -64,7 +64,7 @@ h1{
     text-shadow: 5px 3px 5px blue;
 }
 
-h3{
+h3, .author_name{
     color: rgb(1, 1, 94);
 }
 
@@ -73,5 +73,6 @@ h4{
 }
 
 form h3{
-    text-shadow: 5px 3px 5px rgb(131, 68, 247);
+    text-shadow: 5px 3px 5px rgb(160, 82, 45);
+    color: rgb(139, 69, 19);
 }

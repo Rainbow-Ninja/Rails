@@ -3,7 +3,9 @@
     <div class=book_list>
         <h1>Index of Books</h1>
         <%@book.each do |book|%>
+        <%a1 = Author.find_by_id(book.author_id)%>
         <h3><%=book.title%></h3>
+        <h4 class=author_name><%=a1.name%></h4>
         <h4><%=book.genre%></h4>
         <br>
         <%end%>
