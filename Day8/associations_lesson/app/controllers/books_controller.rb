@@ -5,12 +5,13 @@ class BooksController < ApplicationController
     end
 
     def create
-        @book = Book.create(title: params["title"], genre: params["genre"], author_id: params["author"])
-        #need to find_by author and link them, else create new author
+        find_author = Author.exists?(name: params["author"])
+        if find_author == false
+            Author.create(name: params["author"])
+        end
+        get_author = Author.find_by(name: params["author"])
+        @book = Book.create(title: params["title"], genre: params["genre"], author_id: get_author[:id])
         @book.save
-        puts "******************************"
-        puts @book.errors.full_messages
-        puts "******************************"
         redirect_to '/books'
     end
 

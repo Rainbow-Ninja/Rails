@@ -1,6 +1,12 @@
-<h1>index page</h1>
-<%@book.each do |book|%>
-<h3><%=book.title%></h3>
-<h4><%=book.genre%></h4>
-<br>
-<%end%>
+<div class=index>
+<img class=index_bg src="/assets/books.jpeg" alt="Hey Dumbass, you put the pic in the wrong place!">
+    <div class=book_list>
+        <h1>Index of Books</h1>
+        <%@book.each do |book|%>
+        <h3><%=book.title%></h3>
+        <h4><%=book.genre%></h4>
+        <br>
+        <%end%>
+    </div>
+    <h2><%= link_to "back", :back%></h2>
+</div>

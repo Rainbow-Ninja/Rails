@@ -1,21 +1,23 @@
-<form action="/books" method="POST">
-<%# to avoid csrf token error add the authenticity token as a hidden field %>
-    <input type="hidden" name="authenticity_token" value="<% form_authenticity_token%>">
-    <label>Title</label>
-    <br>
-    <input type="text" name="title">
-    <br>
-    <br>
-    <label>Author</label>
-    <br>
-    <input type="text" name="author">
-    <br>
-    <br>
-    <label>Genre</label>
-    <br>
-    <input type="text" name="genre">
-    <br>
-    <br>
-    <input type="submit" value="Submit">
+<div class=new>
+<img class=new_bg src="/assets/library.jpeg" alt="Hey Dumbass, you put the pic in the wrong place!">
+    <div class=form_bg>
+        <form action="/books" method="POST">
+        <%# to avoid csrf token error add the authenticity token as a hidden field %>
+            <input type="hidden" name="authenticity_token" value="<% form_authenticity_token%>">
+            <h3><label>Title</label></h3>
+            <input type="text" name="title">
+            <br>
+            <br>
+            <h3><label>Author</label></h3>
+            <input type="text" name="author">
+            <br>
+            <br>
+            <h3><label>Genre</label></h3>
+            <input type="text" name="genre">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
 
-</form>
+        </form>
+    </div>
+</div>
